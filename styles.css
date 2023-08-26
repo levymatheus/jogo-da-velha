@@ -1,0 +1,478 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    margin: 0;
+    background-color: #ffffff;
+
+    .game-header {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #212529;
+        position: relative;
+        top: -30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4px;
+        position: relative;
+        top: 15px;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: default;
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+    .cell::selection {
+        background: transparent;
+    }
+
+    .cell:hover {
+        background-color: #f1f5f9;
+    }
+
+    #player,
+    .name-Player {
+        display: grid;
+        grid-gap: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        position: relative;
+        top: -10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .reset {
+        margin-top: 5px;
+    }
+
+    .Buttonreset {
+        position: relative;
+        top: 20px;
+        background-color: #212529;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Buttonreset:hover {
+        background-color: #ffffff;
+        color: #080808;
+    }
+
+    #buttonPlay {
+        background-color: #212529;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffffff;
+        transition: background-color 0.5s ease-in-out;
+        font-size: 12px;
+    }
+
+    #buttonPlay:hover {
+        background-color: #ffffff;
+        color: #080808;
+    }
+
+    .cell[data-cell="X"] {
+        color: #212529;
+        background-color: rgba(224, 224, 224, 0.945);
+        font-size: 80px;
+        height: 100px;
+    }
+
+    .cell[data-cell="O"] {
+        color: #593498;
+        background-color: rgba(224, 224, 224, 0.945);
+        font-size: 80px;
+
+    }
+
+    #toogle-Theme {
+        position: relative;
+        top: 85px;
+        margin-top: 0px;
+    }
+
+    #signature{
+        position: relative;
+        top: 150px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+    }
+
+    #X {
+        background-color: #ffffff;
+        border: 1px solid #212529;
+        color: #212529;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #X::placeholder {
+        color: #212529;
+        text-align: center;
+    }
+
+    #O {
+        background-color: #ffffff;
+        border: 1px solid #212529;
+        color: #212529;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #O::placeholder {
+        color: #212529;
+        text-align: center;
+    }
+
+    #playerInitial {
+        background-color: #ffffff;
+        border: 1px solid #212529;
+        color: #212529;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #playerInitial::placeholder {
+        color: #212529;
+        text-align: center;
+    }
+
+
+
+
+    .cell-Lines[data-cell="X"] {
+        color: #212529;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
+    }
+
+    .cell-Lines[data-cell="O"] {
+        color: #593498;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
+    }
+
+    .cell-columns[data-cell="X"] {
+        color: #212529;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to right, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
+    }
+
+    .cell-columns[data-cell="O"] {
+        color: #593498;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to right, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
+    }
+
+
+    .cell-diagonal1[data-cell="X"] {
+        color: #212529;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top right, transparent 47%, #212529 47%, #212529 53%, transparent 54%);
+
+    }
+
+    .cell-diagonal1[data-cell="O"] {
+        color: #593498;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top right, transparent 47%, #593498 47%, #593498 53%, transparent 54%);
+
+    }
+
+    .cell-diagonal2[data-cell="X"] {
+        color: #212529;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top left, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
+    }
+
+    .cell-diagonal2[data-cell="O"] {
+        color: #593498;
+        background-color: rgba(224, 224, 224, 0.945);
+        -webkit-text-stroke: 2px #ffffff;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top left, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
+    }
+}
+
+.dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    margin: 0;
+    background-color: #212529;
+    color: #ffffff;
+
+    .game-header {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        top: -30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4px;
+        position: relative;
+        top: 15px;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        background-color: #593498;
+        border: 1px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: default;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .cell::selection {
+        background: transparent;
+    }
+
+    .cell:hover {
+        background-color: #170E25;
+    }
+
+    #player,
+    .name-Player {
+        display: grid;
+        grid-gap: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        position: relative;
+        top: -10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .reset {
+        margin-top: 5px;
+    }
+
+    .Buttonreset {
+        position: relative;
+        top: 20px;
+        background-color: #212529;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Buttonreset:hover {
+        background-color: #ffffff;
+        color: #080808;
+    }
+
+    #buttonPlay {
+        background-color: #212529;
+        border: 1px solid rgb(255, 255, 255);
+        color: #ffffff;
+        transition: background-color 0.5s ease-in-out;
+        font-size: 12px;
+    }
+
+    #buttonPlay:hover {
+        background-color: #ffffff;
+        color: #080808;
+    }
+
+    .cell[data-cell="X"] {
+        color: #ffffff;
+        background-color: #2D1B4B;
+        font-size: 80px;
+        height: 100px;
+    }
+
+    .cell[data-cell="O"] {
+        color: black;
+        background-color: #2D1B4B;
+        font-size: 80px;
+    }
+
+    #toogle-Theme {
+        position: relative;
+        top: 85px;
+        margin-top: 0px;
+    }
+
+    #X {
+        background-color: #212529;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #X::placeholder {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    #O {
+        background-color: #212529;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #O::placeholder {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    #playerInitial {
+        background-color: #212529;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        border-radius: .25rem;
+        font-weight: 700;
+        padding: .2rem 1rem;
+        transition: .15s;
+        font-size: 12px;
+    }
+
+    #playerInitial::placeholder {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cell-Lines[data-cell="X"] {
+        color: rgb(255, 255, 255);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top, transparent 47%, white 47%, white 54%, transparent 54%);
+    }
+
+    .cell-Lines[data-cell="O"] {
+        color: rgb(0, 0, 0);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top, transparent 47%, black 47%, black 54%, transparent 54%);
+    }
+
+    .cell-columns[data-cell="X"] {
+        color: rgb(255, 255, 255);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to right, transparent 47%, white 47%, white 54%, transparent 54%);
+    }
+
+    .cell-columns[data-cell="O"] {
+        color: rgb(0, 0, 0);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to right, transparent 47%, black 47%, black 54%, transparent 54%);
+    }
+
+    .cell-diagonal1[data-cell="X"] {
+        color: rgb(255, 255, 255);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top right, transparent 47%, white 47%, white 54%, transparent 54%);
+    }
+
+    .cell-diagonal1[data-cell="O"] {
+        color: rgb(0, 0, 0);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top right, transparent 47%, black 47%, black 53%, transparent 54%);
+    }
+
+    .cell-diagonal2[data-cell="X"] {
+        color: rgb(255, 255, 255);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top left, transparent 47%, white 47%, white 54%, transparent 54%);
+    }
+
+    .cell-diagonal2[data-cell="O"] {
+        color: rgb(0, 0, 0);
+        background-color: #2D1B4B;
+        -webkit-text-stroke: 2px #212529;
+        font-size: 80px;
+        height: 100px;
+        background-Image: linear-gradient(to top left, transparent 47%, black 47%, black 54%, transparent 54%);
+    }
+}
