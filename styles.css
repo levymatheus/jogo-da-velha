@@ -91,18 +91,16 @@ body {
         color: #080808;
     }
 
-    .cell[data-cell="X"] {
+  .cell[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        font-size: 80px;
-        height: 100px;
+        font-size: 4.5rem;
     }
 
     .cell[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        font-size: 80px;
-
+        font-size: 4.5rem;
     }
 
     #toogle-Theme {
