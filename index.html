@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>#Jogo da Velha#</title>
+</head>
+
+<body>
+    <h1 class="game-header">#Jogo da Velha#</h1>
+
+    <div id="player" class="player">
+        <input type="text" for="X" id="X" placeholder="Nome do jogador (X)" data-player="X">
+        <input type="text" for="O" id="O" placeholder="Nome do jogador (O)" data-player="O">
+        <input type="text" for="O" id="playerInitial" placeholder="Quem inicia? (X ou O)">
+        <button id="buttonPlay" class="ButtonPlay" type="button">Começar o game</button>
+    </div>
+    <h4 id="namePlayer" class="name-Player"></h4>
+    <h4 id="winnerPlayer" class="name-Player"></h4>
+
+    <div id="game-container" class="game-container">
+        <button id="1" class="cell" data-cell=""></button>
+        <button id="2" class="cell" data-cell=""></button>
+        <button id="3" class="cell" data-cell=""></button>
+        <button id="4" class="cell" data-cell=""></button>
+        <button id="5" class="cell" data-cell=""></button>
+        <button id="6" class="cell" data-cell=""></button>
+        <button id="7" class="cell" data-cell=""></button>
+        <button id="8" class="cell" data-cell=""></button>
+        <button id="9" class="cell" data-cell=""></button>
+
+    </div>
+    <button id="buttonReset" type="button" class="Buttonreset">Resetar o game</button>
+
+    <div id="toogle-Theme">
+        <a id="dark">
+            <img src="img/dark_mode.svg" alt="">
+        </a>
+        <a id="light" style="display: none;">
+            <img src="img/light_mode_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </a>
+    </div>
+
+    <footer id="signature">
+        <p>Developed by: Levy Matheus</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
