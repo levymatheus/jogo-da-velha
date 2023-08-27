@@ -1,10 +1,9 @@
 body {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 100vh;
     margin: 0;
     background-color: #ffffff;
 
@@ -34,10 +33,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
         cursor: default;
-        transition: background-color 0.3s ease-in-out;
-
     }
 
     .cell::selection {
@@ -91,27 +87,43 @@ body {
         color: #080808;
     }
 
-  .cell[data-cell="X"] {
+    .cell[data-cell="X"] {
+        width: 100px;
+        height: 100px;
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 4.5rem;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+       
     }
 
     .cell[data-cell="O"] {
+        width: 100px;
+        height: 100px;
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 4.5rem;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+
     }
 
     #toogle-Theme {
         position: relative;
-        top: 85px;
+        top: 40px;
         margin-top: 0px;
     }
 
     #signature{
         position: relative;
-        top: 150px;
+        top: 40px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 15px;
     }
