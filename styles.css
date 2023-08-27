@@ -1,5 +1,4 @@
 body {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,25 +85,19 @@ body {
     }
 
     .cell[data-cell="X"] {
-        width: 100px;
-        height: 100px;
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 4.5rem;
         border: 1px solid #ccc;
         cursor: default;
-       
     }
 
     .cell[data-cell="O"] {
-        width: 100px;
-        height: 100px;
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 4.5rem;
         border: 1px solid #ccc;
         cursor: default;
-
     }
 
     #toogle-Theme {
@@ -168,15 +161,11 @@ body {
         text-align: center;
     }
 
-
-
-
     .cell-Lines[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -185,7 +174,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -194,7 +182,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -203,7 +190,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -213,7 +199,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #212529 47%, #212529 53%, transparent 54%);
 
     }
@@ -223,7 +208,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #593498 47%, #593498 53%, transparent 54%);
 
     }
@@ -233,7 +217,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -242,7 +225,6 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 2px #ffffff;
         font-size: 80px;
-        height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 }
