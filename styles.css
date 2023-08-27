@@ -34,14 +34,6 @@ body {
         cursor: default;
     }
 
-    .cell::selection {
-        background: transparent;
-    }
-
-    .cell:hover {
-        background-color: #f1f5f9;
-    }
-
     #player,
     .name-Player {
         display: grid;
