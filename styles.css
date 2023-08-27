@@ -90,6 +90,7 @@ body {
         font-size: 4.5rem;
         border: 1px solid #ccc;
         cursor: default;
+        display: grid;
     }
 
     .cell[data-cell="O"] {
@@ -98,6 +99,7 @@ body {
         font-size: 4.5rem;
         border: 1px solid #ccc;
         cursor: default;
+        display: grid;
     }
 
     #toogle-Theme {
