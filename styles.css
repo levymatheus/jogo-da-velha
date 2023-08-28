@@ -167,6 +167,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -176,6 +178,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -185,6 +189,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -194,6 +200,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -204,6 +212,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #212529 47%, #212529 53%, transparent 54%);
 
     }
@@ -214,6 +224,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #593498 47%, #593498 53%, transparent 54%);
 
     }
@@ -224,6 +236,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -233,6 +247,8 @@ body {
         -webkit-text-stroke: 1px #ffffff;
         font-size: 2rem;
         text-align: center;
+        width: 100px;
+        height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 }
