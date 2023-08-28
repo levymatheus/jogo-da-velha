@@ -86,6 +86,7 @@ body {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 3rem;
+        text-align: center;
         border: 1px solid #ccc;
         cursor: default;
     }
@@ -94,6 +95,7 @@ body {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
         font-size: 3rem;
+        text-align: center;
         border: 1px solid #ccc;
         cursor: default;
     }
@@ -164,6 +166,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -172,6 +175,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -180,6 +184,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to right, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -188,6 +193,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to right, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 
@@ -197,6 +203,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top right, transparent 47%, #212529 47%, #212529 53%, transparent 54%);
 
     }
@@ -206,6 +213,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top right, transparent 47%, #593498 47%, #593498 53%, transparent 54%);
 
     }
@@ -215,6 +223,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top left, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
 
@@ -223,6 +232,7 @@ body {
         background-color: rgba(224, 224, 224, 0.945);
         -webkit-text-stroke: 1px #ffffff;
         font-size: 3rem;
+        text-align: center;
         background-Image: linear-gradient(to top left, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
 }
