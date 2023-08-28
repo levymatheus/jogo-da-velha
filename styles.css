@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #ffffff;
-    position: fixed;
+    position: static;
 
     .game-header {
         font-family: Arial, Helvetica, sans-serif;
