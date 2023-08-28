@@ -4,16 +4,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 100vh;
     margin: 0;
     background-color: #ffffff;
+    overflow: hidden;
 
     .game-header {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         color: #212529;
         position: relative;
-        top: -30px;
+        top: -42px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -23,7 +24,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4px;
         position: relative;
-        top: 15px;
+        top: -15px;
     }
 
     .cell {
@@ -31,16 +32,8 @@ body {
         height: 100px;
         background-color: #ffffff;
         border: 1px solid #ccc;
-        display: block;
-        justify-content: center;
-        align-items: center;
         cursor: default;
-        
-
-    }
-
-    .cell::selection {
-        background: transparent;
+        transition: background-color 0.3s ease-in-out;
     }
 
     .cell:hover {
@@ -54,18 +47,14 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         position: relative;
-        top: -10px;
+        top: -35px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 
-    .reset {
-        margin-top: 5px;
-    }
-
     .Buttonreset {
         position: relative;
-        top: 20px;
+        top: 0px;
         background-color: #212529;
         border: 1px solid rgb(255, 255, 255);
         color: #ffffff;
@@ -93,26 +82,30 @@ body {
     .cell[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        font-size: 4.5rem;
-       
+        font-size: 2rem;
+        text-align: center;
+        border: 1px solid #ccc;
+        cursor: default;
     }
 
     .cell[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        font-size: 4.5rem;
-
+        font-size: 2rem;
+        text-align: center;
+        border: 1px solid #ccc;
+        cursor: default;
     }
 
     #toogle-Theme {
         position: relative;
-        top: 85px;
+        top: 10px;
         margin-top: 0px;
     }
 
     #signature{
         position: relative;
-        top: 150px;
+        top: 10px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 15px;
     }
@@ -165,14 +158,13 @@ body {
         text-align: center;
     }
 
-
-
-
     .cell-Lines[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
@@ -180,8 +172,10 @@ body {
     .cell-Lines[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
@@ -189,8 +183,10 @@ body {
     .cell-columns[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
@@ -198,8 +194,10 @@ body {
     .cell-columns[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
@@ -208,8 +206,10 @@ body {
     .cell-diagonal1[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #212529 47%, #212529 53%, transparent 54%);
 
@@ -218,8 +218,10 @@ body {
     .cell-diagonal1[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, #593498 47%, #593498 53%, transparent 54%);
 
@@ -228,8 +230,10 @@ body {
     .cell-diagonal2[data-cell="X"] {
         color: #212529;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #212529 47%, #212529 54%, transparent 54%);
     }
@@ -237,8 +241,10 @@ body {
     .cell-diagonal2[data-cell="O"] {
         color: #593498;
         background-color: rgba(224, 224, 224, 0.945);
-        -webkit-text-stroke: 2px #ffffff;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, #593498 47%, #593498 54%, transparent 54%);
     }
@@ -249,17 +255,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 100vh;
     margin: 0;
     background-color: #212529;
     color: #ffffff;
+    overflow: hidden;
 
     .game-header {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         color: #ffffff;
         position: relative;
-        top: -30px;
+        top: -42px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -269,7 +276,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4px;
         position: relative;
-        top: 15px;
+        top: -15px;
     }
 
     .cell {
@@ -277,16 +284,8 @@ body {
         height: 100px;
         background-color: #593498;
         border: 1px solid #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
         cursor: default;
         transition: background-color 0.3s ease-in-out;
-    }
-
-    .cell::selection {
-        background: transparent;
     }
 
     .cell:hover {
@@ -300,18 +299,14 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         position: relative;
-        top: -10px;
+        top: -35px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 
-    .reset {
-        margin-top: 5px;
-    }
-
     .Buttonreset {
         position: relative;
-        top: 20px;
+        top: 0px;
         background-color: #212529;
         border: 1px solid rgb(255, 255, 255);
         color: #ffffff;
@@ -339,20 +334,30 @@ body {
     .cell[data-cell="X"] {
         color: #ffffff;
         background-color: #2D1B4B;
-        font-size: 80px;
-        height: 100px;
+        font-size: 2rem;
+        text-align: center;
+        cursor: default;
     }
 
     .cell[data-cell="O"] {
         color: black;
         background-color: #2D1B4B;
-        font-size: 80px;
+        font-size: 2rem;
+        text-align: center;
+        cursor: default;
     }
 
     #toogle-Theme {
         position: relative;
-        top: 85px;
+        top: 10px;
         margin-top: 0px;
+    }
+
+    #signature{
+        position: relative;
+        top: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
     }
 
     #X {
@@ -406,8 +411,10 @@ body {
     .cell-Lines[data-cell="X"] {
         color: rgb(255, 255, 255);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, white 47%, white 54%, transparent 54%);
     }
@@ -415,8 +422,10 @@ body {
     .cell-Lines[data-cell="O"] {
         color: rgb(0, 0, 0);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top, transparent 47%, black 47%, black 54%, transparent 54%);
     }
@@ -424,8 +433,10 @@ body {
     .cell-columns[data-cell="X"] {
         color: rgb(255, 255, 255);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, white 47%, white 54%, transparent 54%);
     }
@@ -433,8 +444,10 @@ body {
     .cell-columns[data-cell="O"] {
         color: rgb(0, 0, 0);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to right, transparent 47%, black 47%, black 54%, transparent 54%);
     }
@@ -442,8 +455,10 @@ body {
     .cell-diagonal1[data-cell="X"] {
         color: rgb(255, 255, 255);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, white 47%, white 54%, transparent 54%);
     }
@@ -451,8 +466,10 @@ body {
     .cell-diagonal1[data-cell="O"] {
         color: rgb(0, 0, 0);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top right, transparent 47%, black 47%, black 53%, transparent 54%);
     }
@@ -460,8 +477,10 @@ body {
     .cell-diagonal2[data-cell="X"] {
         color: rgb(255, 255, 255);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, white 47%, white 54%, transparent 54%);
     }
@@ -469,8 +488,10 @@ body {
     .cell-diagonal2[data-cell="O"] {
         color: rgb(0, 0, 0);
         background-color: #2D1B4B;
-        -webkit-text-stroke: 2px #212529;
-        font-size: 80px;
+        -webkit-text-stroke: 1px #212529;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
         height: 100px;
         background-Image: linear-gradient(to top left, transparent 47%, black 47%, black 54%, transparent 54%);
     }
