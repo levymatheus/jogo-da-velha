@@ -27,8 +27,8 @@ body {
     }
 
     .cell {
-        width: 95px;
-        height: 95px;
+        width: 100px;
+        height: 100px;
         background-color: #ffffff;
         border: 1px solid #ccc;
         cursor: default;
